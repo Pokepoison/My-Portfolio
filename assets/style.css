@@ -5,42 +5,45 @@
 }
 
 main{
-    display: flex;
-    flex-wrap: wrap;
+   /* display: flex;*/
+  
+    
 }
 
+body{
+
+    line-height: 2;
+}
 
 h1{
-   background-color: aquamarine;
+    text-align: center;
+    background-color: aquamarine;
     color: rgb(0, 0, 0);
     text-decoration: solid;
     text-shadow: 2px 2px 5px rgb(128, 0, 255);
-    text-align: center;
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
 }
 
+h2{
+    display: block;
+    padding: 60px;
+    border: 10px solid rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background: rgba(40, 38, 38, 0.763);
+    text-shadow: 2px 2px 5px rgb(128, 0, 255);
+    font-size: 30px;
+   
+}
 
 header{
     background: aquamarine;
     text-align: center;
 }
 
-.card-header{
-    background: rgb(0, 0, 0);
-    color: aquamarine;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-}
 
-h2{
-    padding: 25px;
-    color:rgb(0, 0, 0);
-    text-shadow: 2px 2px 5px rgb(128, 0, 255);
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-}
 
 section{
     background: rgb(0, 0, 0);
@@ -50,23 +53,42 @@ section{
     font-family: 'Times New Roman', Times, serif;
 }
 
+.card.surf{
+    flex: 2 1 100%;
+}
+ 
+ .card.surf img{
+     width: 45%;
+     height: 50%;
+ }
+
 .jpg{
     
     width: 250px;
     height: 50%;
 }
 
-.card{
-    display: flex;
-    display: flex;
-    flex-wrap: wrap;
-  
+.pic-1{
+    padding: 25px;
+    width: 522px;
+    height: 488px;
 }
 
-.card-column{
-    flex: 1 0 200px;
-    padding: 30px;
-    
+.pic-2{
+   width: 55%;
+}
+
+.contaner{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;  
+}
+
+.card{
+    /* or flex: 1 0 200px;? */
+    padding: 30px;   
 }
 
 h3{
@@ -83,50 +105,14 @@ h3{
     font-family: 'Times New Roman', Times, serif;
 }
 
+
 footer{
-    background: aquamarine;
+    
     text-align: center;
 }
-/*.row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-} new code
 
-.justify-center {
-  justify-content: center;
+@media all and (min-width: 768px){
+    .card{
+        flex: 1 0 50%;
+    }   
 }
-
-.card-column {
-  flex: 1 0 100%;
-  padding: 1.5rem;
-  /* when the screen resizes, make it so our columns don't jump in size 
-  transition: flex-basis 500ms linear;
-  margin-bottom: 1.5rem;
-}
-
-.code-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100%;
-    padding: 2rem;
-    color: var(--heliotrope);
-    outline: 2px dashed var(--gin);
-  outline-offset: -2px;
-  transition: all 0.5s ease-in-out;
-
-  .code-card .card-header {
-  
-  position: relative;
-  margin: -4rem 0 1.5rem 0;
-  padding: 0.5rem 1rem;
-  background-color: var(--outer-space);
-  color: var(--heliotrope);
-  border: 2px solid var(--gin);
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
-}
-*/
