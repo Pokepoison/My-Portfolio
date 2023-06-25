@@ -11,8 +11,9 @@ main{
 }
 
 body{
-
+    padding: 20px;
     line-height: 2;
+    background: rgb(0, 0, 0);
 }
 
 h1{
@@ -32,7 +33,7 @@ h2{
     color:rgb(0, 0, 0);
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    background: rgba(40, 38, 38, 0.763);
+    background: rgba(83, 78, 78, 0.763);
     text-shadow: 2px 2px 5px rgb(128, 0, 255);
     font-size: 30px;
    
